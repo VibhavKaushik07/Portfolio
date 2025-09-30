@@ -14,7 +14,9 @@ const Hero = () => {
           <div className="space-y-4">
             <p className="text-primary text-lg tracking-wider uppercase">Data Professional</p>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              <span className="gradient-text">Transforming Data</span>
+              <span className="relative inline-block bg-gradient-to-r from-primary via-foreground to-secondary bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
+                Transforming Data
+              </span>
               <br />
               <span className="text-foreground">Into Insights</span>
             </h1>
