@@ -5,6 +5,7 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Extracurricular from "@/components/Extracurricular";
+import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
 
 const Index = () => {
@@ -54,6 +55,9 @@ const Index = () => {
         </section>
         <section ref={addToRefs} id="extracurricular">
           <Extracurricular />
+        </section>
+        <section ref={addToRefs} id="contact">
+          <Contact />
         </section>
       </main>
       <footer className="border-t border-border/50 py-8 mt-32">
