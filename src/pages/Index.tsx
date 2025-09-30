@@ -40,19 +40,19 @@ const Index = () => {
       <Navigation />
       <Hero />
       <main className="container mx-auto px-4 py-16 space-y-32">
-        <section ref={addToRefs} id="summary" className="opacity-0">
+        <section ref={addToRefs} id="summary">
           <Summary />
         </section>
-        <section ref={addToRefs} id="experience" className="opacity-0">
+        <section ref={addToRefs} id="experience">
           <Experience />
         </section>
-        <section ref={addToRefs} id="skills" className="opacity-0">
+        <section ref={addToRefs} id="skills">
           <Skills />
         </section>
-        <section ref={addToRefs} id="education" className="opacity-0">
+        <section ref={addToRefs} id="education">
           <Education />
         </section>
-        <section ref={addToRefs} id="extracurricular" className="opacity-0">
+        <section ref={addToRefs} id="extracurricular">
           <Extracurricular />
         </section>
       </main>
