@@ -52,7 +52,7 @@ const Hero = () => {
             </h1>
           </div>
 
-          <div className="text-2xl md:text-3xl text-left max-w-2xl mx-auto h-12">
+          <div className="text-2xl md:text-3xl text-center max-w-2xl mx-auto h-12">
             <span className="text-muted-foreground">I'm a </span>
             <span className="text-primary font-semibold">{displayText}</span>
             <span className="text-primary animate-pulse">|</span>
