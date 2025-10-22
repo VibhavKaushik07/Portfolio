@@ -1,6 +1,36 @@
 import { ArrowDown } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
+  const roles = ["Data Analyst", "Problem Solver", "Data Enthusiast"];
+  const [currentRole, setCurrentRole] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const typeSpeed = isDeleting ? 50 : 100;
+    const currentFullText = roles[currentRole];
+
+    const timer = setTimeout(() => {
+      if (!isDeleting) {
+        if (displayText.length < currentFullText.length) {
+          setDisplayText(currentFullText.substring(0, displayText.length + 1));
+        } else {
+          setTimeout(() => setIsDeleting(true), 2000);
+        }
+      } else {
+        if (displayText.length > 0) {
+          setDisplayText(currentFullText.substring(0, displayText.length - 1));
+        } else {
+          setIsDeleting(false);
+          setCurrentRole((prev) => (prev + 1) % roles.length);
+        }
+      }
+    }, typeSpeed);
+
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, currentRole]);
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Animated background elements */}
@@ -22,9 +52,11 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Data Analyst | Business Intelligence | Machine Learning Enthusiast
-          </p>
+          <div className="text-2xl md:text-3xl text-left max-w-2xl mx-auto h-12">
+            <span className="text-muted-foreground">I'm a </span>
+            <span className="text-primary font-semibold">{displayText}</span>
+            <span className="text-primary animate-pulse">|</span>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
