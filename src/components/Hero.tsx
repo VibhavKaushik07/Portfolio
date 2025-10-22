@@ -2,7 +2,7 @@ import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Hero = () => {
-  const roles = ["Data Analyst", "Problem Solver", "Data Enthusiast"];
+  const roles = ["Data Analyst", "Problem Solver", "Data Enthusiast","Story Teller"];
   const [currentRole, setCurrentRole] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
