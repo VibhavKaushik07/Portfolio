@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="space-y-4">
             <p className="text-primary text-lg tracking-wider uppercase">Data Professional</p>
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              <span className="relative inline-block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
+              <span className="relative inline-block bg-gradient-to-r from-primary via-foreground to-secondary bg-clip-text text-transparent bg-[length:200%_100%] animate-shimmer">
                 Transforming Data
               </span>
               <br />
@@ -61,13 +61,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
               href="#summary"
-              className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg glow-effect hover:scale-105 transition-all"
+              className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-semibold rounded-lg glow-effect hover:scale-105 transition-all"
             >
               View Portfolio
             </a>
             <a
               href="#experience"
-              className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all"
+              className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
             >
               Experience
             </a>
