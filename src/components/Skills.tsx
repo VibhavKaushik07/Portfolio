@@ -5,17 +5,17 @@ const Skills = () => {
     {
       icon: Code2,
       title: "Programming",
-      skills: ["Python", "SQL", "R", "JavaScript"],
+      skills: ["Python", "SQL", "R",],
     },
     {
       icon: Database,
       title: "Data Tools",
-      skills: ["Tableau", "Power BI", "Excel", "Apache Spark"],
+      skills: ["Tableau", "Power BI", "Excel",],
     },
     {
       icon: BarChart3,
       title: "Analysis",
-      skills: ["Statistical Analysis", "Data Visualization", "A/B Testing", "Business Intelligence"],
+      skills: ["Statistical Analysis", "Hybrid Frameworks", "A/B Testing", "Propensity Score Matching"],
     },
     {
       icon: Brain,

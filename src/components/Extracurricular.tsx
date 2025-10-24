@@ -4,9 +4,9 @@ const Extracurricular = () => {
   const activities = [
     {
       icon: <Users className="w-6 h-6" />,
-      title: "Data Science Community Leader",
-      organization: "Local Tech Meetup",
-      description: "Organize monthly meetups and workshops for aspiring data professionals, fostering a community of 500+ members.",
+      title: "Volunteer Organizer",
+      organization: "British Heart Foundation",
+      description: "Help BHF organize community events and fundraisers to support heart disease research and awareness.",
       period: "2021 - Present",
     },
     {
@@ -14,21 +14,21 @@ const Extracurricular = () => {
       title: "Kaggle Competitions",
       organization: "Kaggle",
       description: "Active participant in data science competitions, achieved Expert rank with top 5% finishes in multiple challenges.",
-      period: "2019 - Present",
+      period: "2024 - Present",
     },
     {
       icon: <Heart className="w-6 h-6" />,
-      title: "Pro Bono Data Analysis",
-      organization: "Non-Profit Organizations",
-      description: "Volunteer data analyst helping local charities optimize their operations and fundraising strategies.",
-      period: "2020 - Present",
+      title: " Data Analyst Volunteer",
+      organization: "Co-Lab",
+      description: "Helped with data cleaning, analysis, and visualization for social impact projects focused on community development.",
+      period: " Oct 2025 - Present",
     },
     {
       icon: <Lightbulb className="w-6 h-6" />,
-      title: "Tech Blog Writer",
-      organization: "Medium & Personal Blog",
-      description: "Write technical articles on data analysis, visualization, and machine learning with 10K+ monthly readers.",
-      period: "2020 - Present",
+      title: "Active SQL Contributor",
+      organization: "HackeRank",
+      description: "Regularly solve SQL challenges and contribute to discussions, maintaining a 95% accuracy rate across various problem sets.",
+      period: "2024 - Present",
     },
   ];
 

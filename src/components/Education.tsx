@@ -4,32 +4,33 @@ const Education = () => {
   const education = [
     {
       degree: "Master of Science in Data Science",
-      institution: "University of Technology",
-      year: "2018 - 2020",
+      institution: "University of Birmingham",
+      year: "2024 - 2025",
       achievements: [
-        "GPA: 3.9/4.0",
-        "Thesis: Predictive Analytics in Healthcare",
-        "Dean's List, All Semesters",
+        "Classified: Merit",
+        "Dissertation: Hybrid Fraud Detection in PCA- Anonymized CreditCard Transactions Using Unsupervised AnomalyScores and Supervised Learning ",
+        "Modules: Python for Data Science, Machine Learning, Storing and Managing Data, Data Visualization, Time Series Forescasting",
       ],
     },
     {
-      degree: "Bachelor of Science in Statistics",
-      institution: "State University",
-      year: "2014 - 2018",
+      degree: "Bachelor of Engineering in Computer Science and Technology",
+      institution: "K.S Institute of Technology",
+      year: "2020 - 2024",
       achievements: [
-        "GPA: 3.7/4.0",
-        "Minor in Computer Science",
-        "Honors Program Graduate",
+        "CGPA: 8.12/10.0",
+        "Classified: First Class with Distinction",
+        
       ],
     },
   ];
 
   const certifications = [
-    "Google Data Analytics Professional Certificate",
-    "AWS Certified Data Analytics - Specialty",
-    "Tableau Desktop Specialist",
-    "Python for Data Science (IBM)",
-    "Machine Learning Specialization (Stanford)",
+    "SQL : Intermediate ( HackerRank)",
+    "Statistics Foundation 1: The Basics (National Association of State Boards of Accountancy)",
+    "Gold Badge in SQL (HackerRank)",
+    "Communication with Emotional Intelligence (LinkedIn Learning)",
+    "ChatGPT's Operator: Automating Everyday Tasks with AI Agents (LinkedIn Learning)",
+    "Presenting Data Effectively to Inform and Inspire (LinkedIn Learning)",
   ];
 
   return (

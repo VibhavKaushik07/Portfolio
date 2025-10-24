@@ -33,7 +33,7 @@ const Contact = () => {
     setErrors({});
     toast({
       title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      description: "Heya!Thank you for reaching out. I'll get back to you soon.",
     });
     setFormData({ name: "", email: "", message: "" });
   };
@@ -134,12 +134,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-foreground font-medium">contact@example.com</p>
+                  <p className="text-foreground font-medium">vibhavkaushik200207@gmail.com</p>
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/vibhav-kaushik-37ab55249/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group"
@@ -154,7 +154,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://github.com/yourprofile"
+                href="https://github.com/VibhavKaushik07"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-muted-foreground hover:text-primary transition-colors group"
