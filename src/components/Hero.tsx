@@ -33,7 +33,19 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
-      {/* Animated background elements */}
+      {/* 1) Video Background */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover brightness-[0.55]"
+        autoPlay
+        muted 
+        loop
+        playsInline
+      >
+        <source src="/videos/london-loop-small.mp4" type="video/mp4" />
+      </video>
+      {/* 2) Extra Dark Overlay */}
+      <div className="absolute inset-0 bg-black/35" />
+      
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-glow-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "1s" }} />
