@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
+import thamesBg from "@/assets/thames-bg.png";
 
 const Hero = () => {
   const roles = ["Data Analyst", "Problem Solver", "Data Enthusiast","Story Teller"];
@@ -46,9 +47,16 @@ const Hero = () => {
       {/* 2) Extra Dark Overlay */}
       <div className="absolute inset-0 bg-black/35" />
       
+
+      {/* Thames river background */}
+
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] animate-glow-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] animate-glow-pulse" style={{ animationDelay: "1s" }} />
+        <img 
+          src={thamesBg} 
+          alt="Thames River London" 
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-background/30" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -73,13 +81,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <a
               href="#summary"
-              className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-background font-semibold rounded-lg glow-effect hover:scale-105 transition-all"
+              className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-foreground font-semibold rounded-lg glow-effect hover:scale-105 transition-all"
             >
               View Portfolio
             </a>
             <a
               href="#experience"
-              className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all"
+              className="px-8 py-4 border-2 border-primary text-foreground font-semibold rounded-lg hover:bg-primary/10 transition-all"
             >
               Experience
             </a>
