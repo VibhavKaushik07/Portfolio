@@ -42,7 +42,7 @@ const Hero = () => {
         loop
         playsInline
       >
-        <source src="videos/london-loop-small.mp4" type="video/mp4" />
+        <source src="/videos/london-loop-small.mp4" type="video/mp4" />
       </video>
       {/* 2) Extra Dark Overlay */}
       <div className="absolute inset-0 bg-black/30" />
