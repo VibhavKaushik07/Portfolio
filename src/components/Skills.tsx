@@ -20,19 +20,20 @@ const Skills = () => {
     {
       icon: Brain,
       title: "Machine Learning",
-      skills: ["Scikit-learn", "TensorFlow", "Predictive Modeling", "NLP"],
+      skills: ["Scikit-learn", "TensorFlow", "Predictive Modeling", "NLP","Random Forests","K-Means Clustering","Time Series Analysis","Linear Regression"],
     },
   ];
 
   return (
     <div className="space-y-12">
+      {/* Section Header */}
       <div className="text-center space-y-4">
         <h2 className="text-4xl md:text-5xl font-bold gradient-text">
           Skills & Expertise
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
       </div>
-
+      {/* Skill Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {skillCategories.map((category, index) => {
           const IconComponent = category.icon;
@@ -54,7 +55,7 @@ const Skills = () => {
 
                 {/* Back of card */}
                 <div className="absolute inset-0 bg-gradient-to-br from-card to-card/80 border border-primary/30 rounded-xl p-6 backface-hidden rotate-y-180 flex flex-col justify-center">
-                  <div className="space-y-3">
+                  <div className="grid grid-cols-2 sm:grid-cols-2 gap-x-6 gap-y-2">
                     {category.skills.map((skill, i) => (
                       <div key={i} className="flex items-center gap-3">
                         <Check className="w-5 h-5 text-primary flex-shrink-0" />

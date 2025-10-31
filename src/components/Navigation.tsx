@@ -45,7 +45,7 @@ const Navigation = () => {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-foreground/80 hover:text-primary transition-colors relative group"
+                  className="text-white/80 hover:text-primary transition-colors relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-300" />
