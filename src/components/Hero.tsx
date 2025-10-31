@@ -1,6 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
-import thamesBg from "@/assets/thames-bg.png";
+
 
 const Hero = () => {
   const roles = ["Data Analyst", "Problem Solver", "Data Enthusiast","Story Teller"];
@@ -46,18 +46,6 @@ const Hero = () => {
       </video>
       {/* 2) Extra Dark Overlay */}
       <div className="absolute inset-0 bg-black/35" />
-      
-
-      {/* Thames river background */}
-
-      <div className="absolute inset-0 overflow-hidden">
-        <img 
-          src={thamesBg} 
-          alt="Thames River London" 
-          className="w-full h-full object-cover opacity-40"
-        />
-        <div className="absolute inset-0 bg-background/30" />
-      </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center space-y-8 animate-fade-in-up">
