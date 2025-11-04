@@ -17,7 +17,7 @@ const Education = () => {
       institution: "K.S Institute of Technology",
       year: "2020 - 2024",
       achievements: [
-        "CGPA: 8.12/10.0",
+      
         "Classified: First Class with Distinction",
         
       ],
